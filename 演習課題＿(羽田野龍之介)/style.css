@@ -1,0 +1,126 @@
+/* スタイルのリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 背景の設定 */
+body {
+    background: linear-gradient(to bottom right, #2C3E50, #4CA1AF); /* 落ち着いたネイビーとライトブルーのグラデーション */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* ヘッダー */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒背景 */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* 画像をヘッダーに相対配置するために追加 */
+    margin-bottom: 20px; /* ヘッダーの下に余白を追加 */
+}
+
+/* ヘッダー画像 */
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 5px solid #4CA1AF; /* 下部にライトブルーのボーダー */
+}
+
+/* ヘッダーコンテンツ */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ページタイトルボックス */
+.title-box {
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明の白背景 */
+    padding: 10px 20px; /* ボックス内の余白 */
+    border-radius: 10px; /* ボックスの角丸 */
+    margin-top: 20px; /* タイトルの上に余白を追加 */
+    color: #2C3E50; /* テキストの色をネイビーに */
+    text-align: center;
+}
+
+/* ナビゲーションメニュー */
+nav {
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明の白背景 */
+    border-radius: 10px; /* ナビゲーションメニューの角を丸く */
+    margin-top: 10px; /* タイトルとナビゲーションメニューの間に余白を追加 */
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px 0; /* ナビゲーションメニュー内の余白を追加 */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2C3E50; /* テキストの色をネイビーに */
+    font-weight: bold;
+}
+
+/* 各セクション */
+section {
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明の白背景 */
+    margin: 20px auto; /* 自動的に左右中央揃え */
+    border-radius: 10px;
+    max-width: 800px; /* セクションの最大幅を800pxに設定 */
+    width: 90%; /* 画面幅の90%を占める */
+}
+
+/* テキストエリアの調整 */
+section p {
+    margin-bottom: 20px; /* 段落間のスペース */
+    font-size: 1.2em; /* フォントサイズの調整 */
+    line-height: 1.6; /* 行間の調整 */
+    text-align: justify; /* テキストの両端揃え */
+    color: #2C3E50; /* テキストの色をネイビーに */
+}
+
+section h1, section h2 {
+    color: #4CA1AF; /* ヘッダーのテキスト色をライトブルーに */
+    margin-bottom: 20px; /* ヘッダーの下にスペースを追加 */
+    text-align: center; /* ヘッダーのテキストを中央揃え */
+}
+
+/* フォームのスタイル */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #2C3E50;
+}
+
+select, input[type="submit"] {
+    font-size: 1em;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #2C3E50;
+}
+
+input[type="submit"] {
+    background-color: #4CA1AF;
+    color: white;
+    cursor: pointer;
+}
