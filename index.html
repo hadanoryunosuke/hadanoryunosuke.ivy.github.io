@@ -7,59 +7,205 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- ヘッダー -->
     <header>
-        <div class="title-box">
-        
-        <h1>スプラトゥーンファンサイト</h1>
-        
-    </div>
-        <nav>
-            <ul>
-                <li><a href="#home">ホーム</a></li>
-                <li><a href="#about">ゲーム紹介</a></li>
-                <li><a href="#favorite-weapon">好きな武器紹介</a></li>
-                <li><a href="#submit-weapon">みんなの好きな武器を募集</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <div class="title-box">
+                <h1>スプラトゥーンファンサイト</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">ホーム</a></li>
+                    <li><a href="#game">ゲーム紹介</a></li>
+                    <li><a href="#weapons">好きな武器紹介</a></li>
+                    <li><a href="#stages">好きなステージ(マップ)</a></li>
+                    <li><a href="#submit">みんなの好きな武器募集</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="home">
-            <h2>ホーム</h2>
-            <p>訪問ありがとうございます。このサイトは私の好きなゲーム、スプラトゥーンを紹介するサイトです。
-            ゲームの基本情報や自分の好きな武器について紹介します。皆さんの好きな武器も教えてください。</p>
-        </section>
+    <!-- ホーム -->
+    <section id="home">
+        <h1>スプラトゥーンファンサイト</h1>
+        <p>訪問ありがとうございます。このサイトは私の好きなゲームである「スプラトゥーン」を紹介するサイトです。
+            スプラトゥーンの基本情報や自分の好きな武器について紹介します。ぜひ、最後に皆さんの好きな武器も教えてください。</p>
+        <img src="img/FcIGFMNaIAEozDE.png">
+    </section>
 
-        <section id="about">
-            <h2>ゲーム紹介</h2>
-            <p>スプラトゥーンは、任天堂が開発したアクションシューティングゲームです。
-            プレイヤーはインクリングと呼ばれるキャラクターを操作し、インクを使った様々な武器で地面を塗り、塗ったインクの中を泳ぎます。
-            そして4対4に分かれて地面を塗り合い、塗った面積を競う「ナワバリバトル」がゲームの中心になっています。</p>
-            <img src="img/images.jpg">
+    <!-- ゲーム紹介 -->
+    <section id="game">
+        <h2>ゲーム紹介</h2>
+        <p>スプラトゥーンは任天堂が開発した、アクションシューティングゲームです。
+            プレイヤーはインクリングと呼ばれるキャラクターを操作し、インクを使った様々な武器で
+            地面を塗り、塗ったインクの中を泳ぎます。そして4対4に分かれて地面を塗り合い、塗った面積を競う
+            「ナワバリバトル」がゲームの中心になっています。</p>
+        <img src="img/ef782b612191a2ce2174eb297bb894d2.avif">
+    </section>
 
-        </section>
-
-        <section id="favorite-weapon">
-            <h2>好きな武器紹介</h2>
-            <p>私の好きな武器はプライムシューターコラボ（プラコラ）です。射程が長く、ブレが少ないので気に入っています。</p>
+    <!-- 好きな武器紹介 -->
+    <section id="weapons">
+        <h2>好きな武器紹介</h2>
+        <p>スプラトゥーンには様々な種類の武器がありどれもユニークで、おもしろい見た目をした武器も多くあります。
+            その中で私の好きな武器はプライムシューターコラボ（プラコラ）です。この武器は射程が長く、ブレが少ないので使いやすくて愛用しています。</p>
             <img src="img/59428558_480x270.jpeg">
+    </section>
 
-        </section>
+    <!-- 好きなステージ(マップ)紹介 -->
+    <section id="stages">
+        <h2>好きなステージ(マップ)紹介</h2>
+        <p>スプラトゥーンで好きなステージは「ナンプラー遺跡」です。
+            このステージは広くて戦いやすいので気に入っています。
+        </p>
+        <img src="img/stage_087.jpg">
+    </section>
 
-        <section id="submit-weapon">
-            <h2>みんなの好きな武器を募集</h2>
-            <form action="#" method="post">
-                <label for="weapon">好きな武器:</label>
-                <input type="text" id="weapon" name="weapon" required>
-                <label for="reason">理由:</label>
-                <textarea id="reason" name="reason" required></textarea>
-                <input type="submit" value="送信">
-            </form>
-        </section>
-    </main>
+    <!-- みんなの好きな武器募集 -->
+    <section id="submit">
+        <h2>みんなの好きな武器募集</h2>
+        <p>あなたの好きな武器を共有しましょう！</p>
+        <!-- 投票フォーム -->
+        <form action="submit_weapon.php" method="post">
+            <label for="weapon">好きな武器を選んでください:</label>
+                <select id="weapon" name="weapon">
+                    <option>わかばシューター</option>
+                    <option>スプラシューター</option>
+                    <option>プロモデラーMG</option>
+                    <option>N-ZAP85</option>
+                    <option>もみじシューター</option>
+                    <option>スペースシューター</option>
+                    <option>ボールドマーカー</option>
+                    <option>プライムシューター</option>
+                    <option>スプラシューターコラボ</option>
+                    <option>５２ガロン</option>
+                    <option>N-ZAP89</option>
+                    <option>スペースシューターコラボ</option>
+                    <option>L3リールガン</option>
+                    <option>ボールドマーカーネオ</option>
+                    <option>５２ガロンデコ</option>
+                    <option>ジェットスイーパー</option>
+                    <option>シャープマーカー</option>
+                    <option>９６ガロン</option>
+                    <option>プロモデラーRG</option>
+                    <option>L3リールガンD</option>
+                    <option>ボトルガイザー</option>
+                    <option>プライムシューターコラボ</option>
+                    <option>ジェットスイーパーカスタム</option>
+                    <option>シャープマーカーネオ</option>
+                    <option>９６ガロンデコ</option>
+                    <option>H3リールガン</option>
+                    <option>ボトルガイザーフォイル</option>
+                    <option>H3リールガンD</option>
+                    <option>スプラローラー</option>
+                    <option>カーボンローラー</option>
+                    <option>スプラローラコラボ</option>
+                    <option>ダイナモローラー</option>
+                    <option>ワイドローラー</option>
+                    <option>ダイナモローラーテスラ</option>
+                    <option>ワイドローラーコラボ</option>
+                    <option>ヴァリアブルローラー</option>
+                    <option>カーボンローラーデコ</option>
+                    <option>ヴァリアブルローラーフォイル</option>
+                    <option>スプラチャージャー</option>
+                    <option>スクイックリンα</option>
+                    <option>スプラチャージャーコラボ</option>
+                    <option>スプラスコープ</option>
+                    <option>スクイックリンβ</option>
+                    <option>R-PEN/5H</option>
+                    <option>スプラスコープコラボ</option>
+                    <option>リッター4K</option>
+                    <option>R-PEN/5B</option>
+                    <option>リッター4Kカスタム</option>
+                    <option>14式竹筒銃・甲</option>
+                    <option>ソイチューバー</option>
+                    <option>14式竹筒銃・乙</option>
+                    <option>4Kスコープ</option>
+                    <option>ソイチューバーカスタム</option>
+                    <option>4Kスコープカスタム</option>
+                    <option>バケットスロッシャー</option>
+                    <option>ヒッセン</option>
+                    <option>バケットスロッシャーデコ</option>
+                    <option>スクリュースロッシャー</option>
+                    <option>モップリン</option>
+                    <option>ヒッセンヒュー</option>
+                    <option>モップリンD</option>
+                    <option>オーバーフロッシャー</option>
+                    <option>スクリュースロッシャーネオ</option>
+                    <option>オーバーフロッシャーデコ</option>
+                    <option>エクスプロッシャー</option>
+                    <option>エクスプロッシャーカスタム</option>
+                    <option>バレルスピナー</option>
+                    <option>スプラスピナー</option>
+                    <option>イグザミナー</option>
+                    <option>バレルスピナーデコ</option>
+                    <option>イグザミナーヒュー</option>
+                    <option>ハイドラント</option>
+                    <option>ハイドラントカスタム</option>
+                    <option>スプラスピナーコラボ</option>
+                    <option>ノーチラス47</option>
+                    <option>ノーチラス79</option>
+                    <option>クーゲルシュライバー</option>
+                    <option>クーゲルシュライバーヒュー</option>
+                    <option>スプラマニューバー</option>
+                    <option>デュアルスイーパー</option>
+                    <option>スプラマニューバーコラボ</option>
+                    <option>スパッタリー</option>
+                    <option>デュアルスイーパーカスタム</option>
+                    <option>クアッドホッパーブラック</option>
+                    <option>ケルビン525</option>
+                    <option>ガエンFF</option>
+                    <option>クアッドホッパーホワイト</option>
+                    <option>スパッタリーヒュー</option>
+                    <option>ケルビン525デコ</option>
+                    <option>ガエンFFデコ</option>
+                    <option>パラシェルター</option>
+                    <option>24式張替傘・甲</option>
+                    <option>キャンピングシェルター</option>
+                    <option>スパイガジェット</option>
+                    <option>パラシェルターソレーラ</option>
+                    <option>24式張替傘・乙</option>
+                    <option>キャンピングシェルターソレーラ</option>
+                    <option>スパイガジェットソレーラ</option>
+                    <option>ホットブラスター</option>
+                    <option>ラピッドブラスター</option>
+                    <option>ホットブラスターカスタム</option>
+                    <option>ラッピドブラスターデコ</option>
+                    <option>ロングブラスター</option>
+                    <option>ノヴァブラスター</option>
+                    <option>ロングブラスターカスタム</option>
+                    <option>S-BLAST92</option>
+                    <option>クラッシュブラスター</option>
+                    <option>ノヴァブラスターネオ</option>
+                    <option>クラッシュブラスターネオ</option>
+                    <option>Rブラスターエリート</option>
+                    <option>R-BLAST91</option>
+                    <option>Rブラスターエリートデコ</option>
+                    <option>ホクサイ</option>
+                    <option>パブロ</option>
+                    <option>ホクサイヒュー</option>
+                    <option>フィンセント</option>
+                    <option>パブロヒュー</option>
+                    <option>フィンセントヒュー</option>
+                    <option>トライストリンガー</option>
+                    <option>LACT-450</option>           
+                    <option>トライストリンガーコラボ</option>
+                    <option>LACT-450デコ</option>
+                    <option>フルイドV</option>
+                    <option>フルイドVカスタム</option>
+                    <option>ドライブワイパー</option>
+                    <option>ドライブワイパーデコ</option>
+                    <option>ジムワイパー</option>
+                    <option>ジムワイパーヒュー</option>
+                    <option>デンタルワイパーミント</option>
+                    <option>デンタルワイパースミ</option>>
+            </select>
+            <input type="submit" value="投票する">
+        </form>
+    </section>
 
+    <!-- フッター -->
     <footer>
-        <p>©2024 羽田野龍之介</p>
+        <p>&copy;2024 羽田野龍之介</p>
     </footer>
 </body>
 </html>
